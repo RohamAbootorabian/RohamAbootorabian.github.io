@@ -16,6 +16,10 @@ const TRANSLATIONS = {
 
     'skip': 'Skip to content',
     'nav.top': 'Back to top',
+    'nav.about': 'About',
+    'nav.skills': 'Skills',
+    'nav.work': 'Projects',
+    'nav.contact': 'Contact',
 
     'lang.label': 'Fa',
     'lang.switch': 'Switch to Persian',
@@ -105,6 +109,10 @@ const TRANSLATIONS = {
 
     'skip': 'رفتن به محتوا',
     'nav.top': 'بازگشت به بالا',
+    'nav.about': 'درباره من',
+    'nav.skills': 'مهارت‌ها',
+    'nav.work': 'پروژه‌ها',
+    'nav.contact': 'تماس با من',
 
     'lang.label': 'En',
     'lang.switch': 'تغییر زبان به انگلیسی',

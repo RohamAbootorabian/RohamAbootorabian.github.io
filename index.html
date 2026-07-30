@@ -41,12 +41,12 @@
          languages, so it keeps the same order even when the page is RTL -->
     <nav class="nav" aria-label="Main" dir="ltr">
       <a class="nav__logo" href="#top" data-i18n-aria="nav.top" aria-label="Back to top">RA</a>
-      <!-- Menu labels stay in English in both languages, by choice -->
+      <!-- Labels translate, but the bar keeps its LTR order (dir="ltr" above) -->
       <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"   data-i18n="nav.about">About</a></li>
+        <li><a href="#skills"  data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#work"    data-i18n="nav.work">Projects</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="nav__controls">

@@ -594,11 +594,12 @@ a { color: inherit; }
 [lang="fa"] .hero__lead,
 [lang="fa"] .about__text p { max-width: 60ch; }
 
-/* The header opts out of RTL entirely (dir="ltr" on .nav), so its Persian
-   font would be the only thing that changed — pin that too and the bar is
-   pixel-identical in both languages. */
-[lang="fa"] .nav { font-family: "Inter", system-ui, -apple-system, sans-serif; }
+/* The header keeps its LTR order via dir="ltr" on .nav, but the labels
+   themselves are Persian — so they use the Persian face like the rest of
+   the page. Line-height is held at the Latin value to keep the bar height
+   identical in both languages. */
 [lang="fa"] .nav__links { line-height: 1.65; }
+[lang="fa"] .nav__links a { font-size: .92rem; }
 
 /* The arrow points toward the reading direction, so mirror it in RTL */
 [dir="rtl"] .card__link .arrow { transform: scaleX(-1); }
