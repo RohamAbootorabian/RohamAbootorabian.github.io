@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533" role="img" aria-labelledby="t d">
+  <title id="t">SmartBankATM</title>
+  <desc id="d">An ATM simulator built with Python and PyQt6. Features: check balance, transfer funds, change PIN, withdraw cash.</desc>
+
+  <style>
+    .bg    { fill: #eef1f5; }
+    .h1    { font: 700 50px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1d3a6b; letter-spacing: .5px; }
+    .lead  { font: 400 21px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .item  { font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .scr   { font: 500 15px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .amt   { font: 700 26px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .blue  { fill: #4a6fbf; }
+    .navy  { fill: #2f5596; }
+  </style>
+
+  <rect class="bg" width="800" height="533"/>
+
+  <!-- Title -->
+  <text class="h1" x="56" y="88">SMARTBANK ATM</text>
+
+  <!-- Bank card icon -->
+  <g transform="translate(56,124)">
+    <rect x="0" y="4" width="62" height="42" rx="6" class="navy"/>
+    <rect x="0" y="14" width="62" height="9" fill="#1d3a6b"/>
+    <rect x="7" y="31" width="20" height="6" rx="3" fill="#ffffff" opacity=".85"/>
+    <circle cx="50" cy="34" r="7" fill="#e8503a"/>
+    <circle cx="42" cy="34" r="7" fill="#f0a63c" opacity=".9"/>
+  </g>
+
+  <!-- Lead copy -->
+  <text class="lead" x="140" y="142">A desktop ATM simulator built</text>
+  <text class="lead" x="140" y="170">with Python and PyQt6, in</text>
+  <text class="lead" x="140" y="198">Persian and English</text>
+
+  <!-- Feature list -->
+  <g>
+    <circle cx="66" cy="264" r="6" class="blue"/><text class="item" x="90" y="272">Balance enquiry</text>
+    <circle cx="66" cy="312" r="6" class="blue"/><text class="item" x="90" y="320">Account transfers</text>
+    <circle cx="66" cy="360" r="6" class="blue"/><text class="item" x="90" y="368">Form validation</text>
+    <circle cx="66" cy="408" r="6" class="blue"/><text class="item" x="90" y="416">PIN change &amp; withdrawal</text>
+  </g>
+
+  <!-- ATM mockup -->
+  <g transform="translate(452,112)">
+    <rect x="0" y="0" width="296" height="320" rx="16" fill="#ffffff" stroke="#4a6fbf" stroke-width="7"/>
+
+    <!-- screen -->
+    <rect x="26" y="26" width="244" height="132" rx="8" class="navy"/>
+    <text class="scr" x="44" y="58">Available balance</text>
+    <text class="amt" x="44" y="94">$ 2,480.00</text>
+    <rect x="44" y="112" width="96" height="24" rx="5" fill="#3fae6d"/>
+    <rect x="150" y="112" width="96" height="24" rx="5" fill="#ffffff" opacity=".28"/>
+
+    <!-- keypad -->
+    <g fill="#dfe4ec">
+      <rect x="26" y="180" width="66" height="34" rx="6"/>
+      <rect x="115" y="180" width="66" height="34" rx="6"/>
+      <rect x="204" y="180" width="66" height="34" rx="6"/>
+      <rect x="26" y="226" width="66" height="34" rx="6"/>
+      <rect x="115" y="226" width="66" height="34" rx="6"/>
+      <rect x="204" y="226" width="66" height="34" rx="6"/>
+    </g>
+    <rect x="26" y="272" width="155" height="34" rx="6" class="blue"/>
+    <rect x="204" y="272" width="66" height="34" rx="6" fill="#e8503a" opacity=".85"/>
+  </g>
+</svg>

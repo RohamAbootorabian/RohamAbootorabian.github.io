@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Roham Abootorabian — Python Developer</title>
+  <meta name="description" data-i18n-content="meta.desc" content="Roham Abootorabian — Computer Science student at Amirkabir University of Technology. Python developer building desktop apps, network tools, and database-driven software.">
+
+  <meta property="og:title" content="Roham Abootorabian — Python Developer">
+  <meta property="og:description" content="Computer Science student at Amirkabir University of Technology. Python developer building desktop apps, network tools, and database-driven software.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
+
+  <!-- Set theme and language before first paint so neither flashes on load -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var saved = localStorage.getItem('theme');
+      var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      d.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+
+      var lang = localStorage.getItem('lang');
+      if (!lang) lang = (navigator.language || '').toLowerCase().startsWith('fa') ? 'fa' : 'en';
+      d.setAttribute('lang', lang);
+      d.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <!-- dir="ltr" pins the header layout: the menu is English in both
+         languages, so it keeps the same order even when the page is RTL -->
+    <nav class="nav" aria-label="Main" dir="ltr">
+      <a class="nav__logo" href="#top" data-i18n-aria="nav.top" aria-label="Back to top">RA</a>
+      <!-- Menu labels stay in English in both languages, by choice -->
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__controls">
+        <button class="lang-toggle" id="langToggle" type="button"
+                data-i18n-aria="lang.switch" aria-label="Switch to Persian">
+          <span class="lang-toggle__label" data-i18n="lang.label">فارسی</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button"
+                data-i18n-aria="theme.toDark" aria-label="Switch to dark theme" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="hero__eyebrow reveal" data-i18n="hero.eyebrow">Open to software engineering internships</p>
+        <h1 class="hero__title reveal" data-i18n-html="hero.title">
+          Hi, I'm <span class="accent">Roham</span>.<br>
+          I build software with Python.
+        </h1>
+        <p class="hero__lead reveal" data-i18n="hero.lead">
+          Third-year Computer Science student at Amirkabir University of Technology
+          (Tehran Polytechnic), GPA 18/20. I work in Python and object-oriented design —
+          building real-time networked apps, desktop GUIs, and database-driven tools.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#work" data-i18n="hero.cta1">See my projects</a>
+          <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal" data-i18n="about.title">About</h2>
+        <div class="about">
+          <div class="about__text reveal">
+            <p data-i18n="about.p1">
+              I'm a Computer Science student in Tehran, focused on Python and
+              object-oriented programming. Most of what I've built so far came out of
+              university coursework and personal curiosity: a real-time messenger using
+              sockets and threading, a Unix-like virtual file system, an ATM simulator
+              with a bilingual interface, and a library management system written in C.
+            </p>
+            <p data-i18n="about.p2">
+              I'm comfortable across the stack a small project needs — designing the
+              database layer, wiring up the logic, and building the interface people
+              actually touch. I'm currently looking for an internship where I can work
+              on real systems alongside people who've built them before.
+            </p>
+          </div>
+
+          <div class="about__aside reveal">
+            <h3 class="aside__title" data-i18n="about.eduTitle">Education</h3>
+            <div class="edu">
+              <p class="edu__degree" data-i18n="about.degree">BSc, Computer Science</p>
+              <p class="edu__school" data-i18n-html="about.school">Amirkabir University of Technology<br>(Tehran Polytechnic)</p>
+              <p class="edu__meta" data-i18n="about.eduMeta">2024 – present · GPA 18/20</p>
+            </div>
+
+            <h3 class="aside__title" data-i18n="about.courseTitle">Coursework</h3>
+            <ul class="tags">
+              <li class="tag" data-i18n="course.ds">Data Structures</li>
+              <li class="tag" data-i18n="course.algo">Algorithm Design</li>
+              <li class="tag" data-i18n="course.ap">Advanced Programming</li>
+              <li class="tag" data-i18n="course.sd">Software Design</li>
+              <li class="tag" data-i18n="course.ai">Artificial Intelligence</li>
+              <li class="tag" data-i18n="course.cs">Computer Systems</li>
+            </ul>
+
+            <h3 class="aside__title" data-i18n="about.langTitle">Languages</h3>
+            <ul class="tags">
+              <li class="tag" data-i18n="lang.fa">Persian — native</li>
+              <li class="tag" data-i18n="lang.en">English — professional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal" data-i18n="skills.title">Skills</h2>
+        <div class="skills">
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="skills.langs">Languages</h3>
+            <ul class="tags">
+              <li class="tag tag--strong">Python</li>
+              <li class="tag">C</li>
+              <li class="tag">C++</li>
+              <li class="tag tag--strong">HTML</li>
+              <li class="tag tag--strong">CSS</li>
+              <li class="tag">SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="skills.frameworks">Frameworks &amp; libraries</h3>
+            <ul class="tags">
+              <li class="tag">Django</li>
+              <li class="tag">Flask</li>
+              <li class="tag">PyQt5 / PyQt6</li>
+              <li class="tag">pandas</li>
+              <li class="tag">NumPy</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="skills.db">Databases</h3>
+            <ul class="tags">
+              <li class="tag">SQLite</li>
+              <li class="tag">MySQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="skills.tools">Tools &amp; concepts</h3>
+            <ul class="tags">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag" data-i18n="skill.oop">OOP</li>
+              <li class="tag" data-i18n="skill.socket">Socket programming</li>
+              <li class="tag" data-i18n="skill.thread">Threading</li>
+              <li class="tag" data-i18n="skill.ai">AI / Machine learning</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section__title reveal" data-i18n="work.title">Projects</h2>
+        <div class="cards">
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--img">
+              <img src="assets/simple-messenger.svg" width="800" height="533"
+                   loading="lazy" decoding="async" data-i18n-alt="p1.alt"
+                   alt="Simple Messenger: a real-time messaging app built with Python and PyQt. Features listed are sign up and log in, real-time messaging, message history, and modular architecture, shown beside a mockup of the chat interface.">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Simple Messenger</h3>
+              <p class="card__meta" data-i18n="p1.meta">Team project · Amirkabir University · 2024</p>
+              <p class="card__desc" data-i18n-html="p1.desc">
+                A real-time messaging app in Python combining socket programming,
+                threading, a PyQt5 interface, and SQLite storage — with user
+                authentication, concurrent chat, and persistent message history.
+                <strong>My part:</strong> designing and implementing the
+                <code>DatabaseManager</code> layer for users and messages, plus the UI.
+              </p>
+              <ul class="tags tags--sm">
+                <li class="tag">Python</li>
+                <li class="tag" data-i18n="tag.sockets">Sockets</li>
+                <li class="tag" data-i18n="tag.threading">Threading</li>
+                <li class="tag">PyQt5</li>
+                <li class="tag">SQLite</li>
+              </ul>
+              <a class="card__link" href="https://github.com/RohamAbootorabian/Simple-messenger"
+                 target="_blank" rel="noopener" data-i18n-aria="p1.aria"
+                 aria-label="View Simple Messenger on GitHub (opens in a new tab)">
+                <span data-i18n="work.view">View on GitHub</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--img">
+              <img src="assets/virtual-file-system.svg" width="800" height="533"
+                   loading="lazy" decoding="async" data-i18n-alt="p2.alt"
+                   alt="Virtual File System: a Unix-like file system with a command-line interface. Features listed are Unix-style commands, directory tree structure, absolute and relative paths, and in-place file editing, shown beside a terminal window running mkdir, cd, touch, ls and cat.">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Virtual File System</h3>
+              <p class="card__meta" data-i18n="p2.meta">Course project · Amirkabir University · 2024</p>
+              <p class="card__desc" data-i18n-html="p2.desc">
+                A Unix-like virtual file system with a command-line interface, built in
+                Python around four core classes (<code>VirtualFileSystem</code>,
+                <code>Directory</code>, <code>File</code>, <code>CommandPrompt</code>).
+                Supports <code>mkdir</code>, <code>rm</code>, <code>cp</code>,
+                <code>mv</code>, <code>cd</code>, <code>ls</code> and more, with absolute
+                and relative path resolution and in-place file editing.
+              </p>
+              <ul class="tags tags--sm">
+                <li class="tag">Python</li>
+                <li class="tag" data-i18n="skill.oop">OOP</li>
+                <li class="tag">CLI</li>
+                <li class="tag" data-i18n="tag.tree">Tree structures</li>
+              </ul>
+              <a class="card__link" href="https://github.com/RohamAbootorabian/AP_Project"
+                 target="_blank" rel="noopener" data-i18n-aria="p2.aria"
+                 aria-label="View Virtual File System on GitHub (opens in a new tab)">
+                <span data-i18n="work.view">View on GitHub</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--img">
+              <img src="assets/smartbank-atm.svg" width="800" height="533"
+                   loading="lazy" decoding="async" data-i18n-alt="p3.alt"
+                   alt="SmartBankATM: a desktop ATM simulator built with Python and PyQt6, in Persian and English. Features listed are balance enquiry, account transfers, form validation, and PIN change and withdrawal, shown beside an ATM screen mockup.">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">SmartBankATM</h3>
+              <p class="card__meta" data-i18n="p3.meta">Personal project · 2024</p>
+              <p class="card__desc" data-i18n-html="p3.desc">
+                An ATM simulator built with Python and PyQt6, featuring a bilingual
+                Persian/English interface. Implements balance enquiry, account-to-account
+                transfers with form validation on card number and available funds,
+                PIN changes, and cash withdrawal.
+              </p>
+              <ul class="tags tags--sm">
+                <li class="tag">Python</li>
+                <li class="tag">PyQt6</li>
+                <li class="tag" data-i18n="tag.gui">GUI design</li>
+                <li class="tag" data-i18n="tag.validation">Form validation</li>
+              </ul>
+              <a class="card__link" href="https://github.com/RohamAbootorabian/SmartBankATM"
+                 target="_blank" rel="noopener" data-i18n-aria="p3.aria"
+                 aria-label="View SmartBankATM on GitHub (opens in a new tab)">
+                <span data-i18n="work.view">View on GitHub</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--img">
+              <img src="assets/library-system.svg" width="800" height="533"
+                   loading="lazy" decoding="async" data-i18n-alt="p4.alt"
+                   alt="Library Management System: a role-based library system written in C. Features listed are librarian and student roles, add, edit and delete books, borrow request approval, and persistent file storage, shown beside a book catalogue mockup.">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Library Management System</h3>
+              <p class="card__meta" data-i18n="p4.meta">Course project · Amirkabir University · 2024</p>
+              <p class="card__desc" data-i18n-html="p4.desc">
+                A role-based library system written in C. Librarians can add, edit,
+                delete and browse books and approve or reject borrow requests; students
+                can search the catalogue and submit requests. All data persists to text
+                files through a custom file I/O layer.
+              </p>
+              <ul class="tags tags--sm">
+                <li class="tag">C</li>
+                <li class="tag" data-i18n="tag.fileio">File I/O</li>
+                <li class="tag" data-i18n="tag.roles">Role-based access</li>
+              </ul>
+              <a class="card__link" href="https://github.com/RohamAbootorabian/Library-Management-System"
+                 target="_blank" rel="noopener" data-i18n-aria="p4.aria"
+                 aria-label="View Library Management System on GitHub (opens in a new tab)">
+                <span data-i18n="work.view">View on GitHub</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title reveal" data-i18n="contact.title">Get in touch</h2>
+        <p class="contact__lead reveal" data-i18n="contact.lead">
+          I'm looking for a software engineering internship and I'm happy to talk about
+          any of the projects above. Email is the best way to reach me.
+        </p>
+        <a class="btn btn--primary btn--lg reveal" href="mailto:abootorabianamir@gmail.com" dir="ltr">
+          abootorabianamir@gmail.com
+        </a>
+        <p class="contact__location reveal" data-i18n="contact.location">Based in Tehran, Iran</p>
+        <ul class="socials reveal">
+          <li><a href="https://github.com/RohamAbootorabian" target="_blank" rel="noopener"
+                 data-i18n-aria="social.gh" aria-label="GitHub profile (opens in a new tab)">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/roham-abootorabian" target="_blank" rel="noopener"
+                 data-i18n-aria="social.li" aria-label="LinkedIn profile (opens in a new tab)">LinkedIn</a></li>
+          <li><a href="https://t.me/roham_abt" target="_blank" rel="noopener"
+                 data-i18n-aria="social.tg" aria-label="Telegram (opens in a new tab)"
+                 data-i18n="social.tgLabel">Telegram</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n-html="footer">&copy; <span id="year"></span> Roham Abootorabian. Built from scratch, no frameworks.</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

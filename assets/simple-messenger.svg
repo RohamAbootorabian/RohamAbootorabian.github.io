@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533" role="img" aria-labelledby="t d">
+  <title id="t">Simple Messenger</title>
+  <desc id="d">A real-time messaging app built with Python and PyQt. Features: sign up and log in, real-time messaging, message history, and modular architecture.</desc>
+
+  <style>
+    .bg    { fill: #eef1f5; }
+    .h1    { font: 700 50px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1d3a6b; letter-spacing: .5px; }
+    .lead  { font: 400 21px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .item  { font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .btn   { font: 600 14px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .blue  { fill: #4a6fbf; }
+    .navy  { fill: #2f5596; }
+  </style>
+
+  <rect class="bg" width="800" height="533"/>
+
+  <!-- Title -->
+  <text class="h1" x="56" y="88">SIMPLE MESSENGER</text>
+
+  <!-- Envelope icon with unread badge -->
+  <g transform="translate(56,124)">
+    <rect x="0" y="6" width="66" height="46" rx="6" class="navy"/>
+    <path d="M0 12 l33 24 l33 -24" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="64" cy="8" r="12" fill="#e8503a"/>
+    <text x="64" y="13" text-anchor="middle" font="700 14px Helvetica" font-size="14" font-weight="700"
+          font-family="Helvetica Neue, Helvetica, Arial, sans-serif" fill="#ffffff">1</text>
+  </g>
+
+  <!-- Lead copy -->
+  <text class="lead" x="146" y="142">A real-time messaging app</text>
+  <text class="lead" x="146" y="170">built with Python and PyQt</text>
+
+  <!-- Feature list -->
+  <g>
+    <circle cx="66" cy="264" r="6" class="blue"/><text class="item" x="90" y="272">Sign up &amp; log in</text>
+    <circle cx="66" cy="312" r="6" class="blue"/><text class="item" x="90" y="320">Real-time messaging</text>
+    <circle cx="66" cy="360" r="6" class="blue"/><text class="item" x="90" y="368">Message history</text>
+    <circle cx="66" cy="408" r="6" class="blue"/><text class="item" x="90" y="416">Modular architecture</text>
+  </g>
+
+  <!-- App mockup: auth pane + chat pane -->
+  <g transform="translate(452,112)">
+    <rect x="0" y="0" width="296" height="320" rx="16" fill="#ffffff" stroke="#4a6fbf" stroke-width="7"/>
+    <line x1="132" y1="8" x2="132" y2="312" stroke="#dfe4ec" stroke-width="3"/>
+
+    <!-- left: sign in -->
+    <rect x="22" y="26" width="88" height="30" rx="6" class="blue"/>
+    <text class="btn" x="66" y="46" text-anchor="middle">Sign In</text>
+    <rect x="22" y="72" width="88" height="16" rx="5" fill="#e0e5ed"/>
+    <rect x="22" y="98" width="88" height="16" rx="5" fill="#e0e5ed"/>
+    <rect x="22" y="130" width="88" height="30" rx="6" class="blue"/>
+    <text class="btn" x="66" y="150" text-anchor="middle">Log in</text>
+
+    <!-- right: chat bubbles -->
+    <rect x="152" y="26" width="86" height="16" rx="8" fill="#e0e5ed"/>
+    <rect x="182" y="54" width="92" height="30" rx="10" fill="#3fae6d"/>
+    <rect x="152" y="96" width="72" height="16" rx="8" fill="#e0e5ed"/>
+    <rect x="152" y="124" width="98" height="26" rx="10" fill="#e0e5ed"/>
+    <rect x="196" y="162" width="78" height="26" rx="10" fill="#3fae6d"/>
+    <rect x="152" y="200" width="88" height="16" rx="8" fill="#e0e5ed"/>
+
+    <!-- composer -->
+    <rect x="152" y="272" width="122" height="26" rx="8" fill="#eef1f5"/>
+  </g>
+</svg>

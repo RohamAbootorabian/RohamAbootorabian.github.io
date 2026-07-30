@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533" role="img" aria-labelledby="t d">
+  <title id="t">Virtual File System</title>
+  <desc id="d">A Unix-like virtual file system with a command-line interface, built in Python. Features: Unix-style commands, directory tree, path resolution, and file editing.</desc>
+
+  <style>
+    .bg    { fill: #eef1f5; }
+    .h1    { font: 700 44px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1d3a6b; letter-spacing: .5px; }
+    .lead  { font: 400 21px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .item  { font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .mono  { font: 400 15px ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .blue  { fill: #4a6fbf; }
+    .navy  { fill: #2f5596; }
+  </style>
+
+  <rect class="bg" width="800" height="533"/>
+
+  <!-- Title -->
+  <text class="h1" x="56" y="78">VIRTUAL</text>
+  <text class="h1" x="56" y="126">FILE SYSTEM</text>
+
+  <!-- Terminal glyph -->
+  <g transform="translate(56,158)">
+    <rect x="0" y="8" width="66" height="52" rx="8" fill="none" stroke="#2f5596" stroke-width="6"/>
+    <path d="M15 26 l12 10 l-12 10" fill="none" stroke="#2f5596" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="34" y1="47" x2="52" y2="47" stroke="#2f5596" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lead copy -->
+  <text class="lead" x="146" y="182">A Unix-like file system with a</text>
+  <text class="lead" x="146" y="210">command-line interface</text>
+
+  <!-- Feature list -->
+  <g>
+    <circle cx="66" cy="288" r="6" class="blue"/><text class="item" x="90" y="296">Unix-style commands</text>
+    <circle cx="66" cy="336" r="6" class="blue"/><text class="item" x="90" y="344">Directory tree structure</text>
+    <circle cx="66" cy="384" r="6" class="blue"/><text class="item" x="90" y="392">Absolute &amp; relative paths</text>
+    <circle cx="66" cy="432" r="6" class="blue"/><text class="item" x="90" y="440">In-place file editing</text>
+  </g>
+
+  <!-- Terminal window mockup -->
+  <g transform="translate(452,112)">
+    <rect x="0" y="0" width="296" height="320" rx="16" fill="#ffffff" stroke="#4a6fbf" stroke-width="7"/>
+
+    <!-- title bar with traffic lights -->
+    <path d="M0 16 a16 16 0 0 1 16 -16 h264 a16 16 0 0 1 16 16 v22 h-296 z" fill="#dfe4ec"/>
+    <circle cx="24" cy="19" r="5" fill="#e8503a"/>
+    <circle cx="42" cy="19" r="5" fill="#f0a63c"/>
+    <circle cx="60" cy="19" r="5" fill="#3fae6d"/>
+
+    <!-- console body -->
+    <rect x="12" y="50" width="272" height="256" rx="8" fill="#22303f"/>
+
+    <g class="mono">
+      <text x="28" y="80"  fill="#7fd6a2">$</text><text x="44" y="80"  fill="#e6edf3">mkdir projects</text>
+      <text x="28" y="108" fill="#7fd6a2">$</text><text x="44" y="108" fill="#e6edf3">cd projects</text>
+      <text x="28" y="136" fill="#7fd6a2">$</text><text x="44" y="136" fill="#e6edf3">touch notes.txt</text>
+      <text x="28" y="164" fill="#7fd6a2">$</text><text x="44" y="164" fill="#e6edf3">ls</text>
+      <text x="44" y="192" fill="#8fa6bd">notes.txt</text>
+      <text x="28" y="220" fill="#7fd6a2">$</text><text x="44" y="220" fill="#e6edf3">cat notes.txt</text>
+      <text x="44" y="248" fill="#8fa6bd">first line</text>
+      <text x="28" y="276" fill="#7fd6a2">$</text>
+    </g>
+    <rect x="46" y="264" width="11" height="17" fill="#e6edf3"/>
+  </g>
+</svg>

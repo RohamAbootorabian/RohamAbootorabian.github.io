@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533" role="img" aria-labelledby="t d">
+  <title id="t">Library Management System</title>
+  <desc id="d">A role-based library system written in C. Features: librarian and student roles, book management, borrow requests, and file-based storage.</desc>
+
+  <style>
+    .bg    { fill: #eef1f5; }
+    .h1    { font: 700 44px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1d3a6b; letter-spacing: .5px; }
+    .lead  { font: 400 21px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .item  { font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .row   { font: 500 15px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .hd    { font: 700 15px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .blue  { fill: #4a6fbf; }
+    .navy  { fill: #2f5596; }
+  </style>
+
+  <rect class="bg" width="800" height="533"/>
+
+  <!-- Title (two lines to keep type large) -->
+  <text class="h1" x="56" y="78">LIBRARY</text>
+  <text class="h1" x="56" y="126">MANAGEMENT</text>
+
+  <!-- Stacked books icon -->
+  <g transform="translate(56,158)">
+    <rect x="0"  y="20" width="16" height="46" rx="3" class="navy"/>
+    <rect x="21" y="10" width="16" height="56" rx="3" class="blue"/>
+    <rect x="42" y="26" width="16" height="40" rx="3" fill="#3fae6d"/>
+    <rect x="0"  y="70" width="58" height="7" rx="3" fill="#1d3a6b"/>
+  </g>
+
+  <!-- Lead copy -->
+  <text class="lead" x="140" y="182">A role-based library system</text>
+  <text class="lead" x="140" y="210">written in C</text>
+
+  <!-- Feature list -->
+  <g>
+    <circle cx="66" cy="288" r="6" class="blue"/><text class="item" x="90" y="296">Librarian &amp; student roles</text>
+    <circle cx="66" cy="336" r="6" class="blue"/><text class="item" x="90" y="344">Add, edit &amp; delete books</text>
+    <circle cx="66" cy="384" r="6" class="blue"/><text class="item" x="90" y="392">Borrow request approval</text>
+    <circle cx="66" cy="432" r="6" class="blue"/><text class="item" x="90" y="440">Persistent file storage</text>
+  </g>
+
+  <!-- Catalogue mockup -->
+  <g transform="translate(452,112)">
+    <rect x="0" y="0" width="296" height="320" rx="16" fill="#ffffff" stroke="#4a6fbf" stroke-width="7"/>
+
+    <!-- header bar -->
+    <path d="M0 16 a16 16 0 0 1 16 -16 h264 a16 16 0 0 1 16 16 v34 h-296 z" class="navy"/>
+    <text class="hd" x="24" y="33">Catalogue</text>
+
+    <!-- search field -->
+    <rect x="24" y="68" width="248" height="30" rx="6" fill="#e6eaf1"/>
+    <circle cx="44" cy="83" r="7" fill="none" stroke="#7d879b" stroke-width="2.5"/>
+    <line x1="49" y1="88" x2="55" y2="94" stroke="#7d879b" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- book rows: title bar + status pill -->
+    <g>
+      <rect x="24" y="116" width="150" height="11" rx="5" fill="#c9d2e0"/>
+      <rect x="206" y="112" width="66" height="20" rx="10" fill="#3fae6d"/>
+
+      <rect x="24" y="158" width="176" height="11" rx="5" fill="#c9d2e0"/>
+      <rect x="206" y="154" width="66" height="20" rx="10" fill="#e8a33a"/>
+
+      <rect x="24" y="200" width="132" height="11" rx="5" fill="#c9d2e0"/>
+      <rect x="206" y="196" width="66" height="20" rx="10" fill="#3fae6d"/>
+
+      <rect x="24" y="242" width="164" height="11" rx="5" fill="#c9d2e0"/>
+      <rect x="206" y="238" width="66" height="20" rx="10" fill="#d6dbe4"/>
+    </g>
+
+    <!-- action button -->
+    <rect x="24" y="278" width="118" height="28" rx="6" class="blue"/>
+  </g>
+</svg>
