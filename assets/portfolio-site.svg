@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533" role="img" aria-labelledby="t d">
+  <title id="t">Personal Portfolio Website</title>
+  <desc id="d">A bilingual portfolio site built with plain HTML, CSS and JavaScript. Features: English and Persian with RTL, light and dark themes, WCAG AA accessibility, and no frameworks.</desc>
+
+  <style>
+    .bg    { fill: #eef1f5; }
+    .h1    { font: 700 44px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1d3a6b; letter-spacing: .5px; }
+    .lead  { font: 400 21px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .item  { font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .chip  { font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .blue  { fill: #4a6fbf; }
+    .navy  { fill: #2f5596; }
+  </style>
+
+  <rect class="bg" width="800" height="533"/>
+
+  <!-- Title -->
+  <text class="h1" x="56" y="78">PORTFOLIO</text>
+  <text class="h1" x="56" y="126">WEBSITE</text>
+
+  <!-- Code brackets icon -->
+  <g transform="translate(56,158)" fill="none" stroke="#2f5596" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 20 L4 40 L20 60"/>
+    <path d="M46 20 L62 40 L46 60"/>
+  </g>
+
+  <!-- Lead copy -->
+  <text class="lead" x="146" y="182">Bilingual, responsive and</text>
+  <text class="lead" x="146" y="210">accessible — no frameworks</text>
+
+  <!-- Feature list -->
+  <g>
+    <circle cx="66" cy="288" r="6" class="blue"/><text class="item" x="90" y="296">English &amp; Persian with RTL</text>
+    <circle cx="66" cy="336" r="6" class="blue"/><text class="item" x="90" y="344">Light &amp; dark themes</text>
+    <circle cx="66" cy="384" r="6" class="blue"/><text class="item" x="90" y="392">WCAG AA accessibility</text>
+    <circle cx="66" cy="432" r="6" class="blue"/><text class="item" x="90" y="440">Plain HTML, CSS &amp; JS</text>
+  </g>
+
+  <!-- Browser mockup, split light / dark to show theming -->
+  <g transform="translate(452,112)">
+    <rect x="0" y="0" width="296" height="320" rx="16" fill="#ffffff" stroke="#4a6fbf" stroke-width="7"/>
+
+    <!-- browser chrome -->
+    <path d="M0 16 a16 16 0 0 1 16 -16 h264 a16 16 0 0 1 16 16 v26 h-296 z" fill="#dfe4ec"/>
+    <circle cx="24" cy="21" r="5" fill="#e8503a"/>
+    <circle cx="42" cy="21" r="5" fill="#f0a63c"/>
+    <circle cx="60" cy="21" r="5" fill="#3fae6d"/>
+    <rect x="80" y="13" width="128" height="16" rx="8" fill="#ffffff"/>
+
+    <!-- left half: light theme, LTR -->
+    <g>
+      <rect x="12" y="54" width="130" height="252" rx="8" fill="#f7f9fc"/>
+      <rect x="24" y="68" width="60" height="12" rx="6" fill="#2f5596"/>
+      <rect x="24" y="92" width="106" height="9" rx="4" fill="#c9d2e0"/>
+      <rect x="24" y="108" width="88" height="9" rx="4" fill="#c9d2e0"/>
+      <rect x="24" y="132" width="52" height="20" rx="6" class="blue"/>
+      <rect x="24" y="170" width="106" height="52" rx="8" fill="#e4eaf3"/>
+      <rect x="24" y="234" width="106" height="52" rx="8" fill="#e4eaf3"/>
+      <text class="chip" x="77" y="304" text-anchor="middle" fill="#5b6478">EN</text>
+    </g>
+
+    <!-- right half: dark theme, RTL (blocks mirror to the right edge) -->
+    <g>
+      <rect x="154" y="54" width="130" height="252" rx="8" fill="#161a21"/>
+      <rect x="212" y="68" width="60" height="12" rx="6" fill="#a5a1ff"/>
+      <rect x="166" y="92" width="106" height="9" rx="4" fill="#3a4250"/>
+      <rect x="184" y="108" width="88" height="9" rx="4" fill="#3a4250"/>
+      <rect x="220" y="132" width="52" height="20" rx="6" fill="#a5a1ff"/>
+      <rect x="166" y="170" width="106" height="52" rx="8" fill="#222833"/>
+      <rect x="166" y="234" width="106" height="52" rx="8" fill="#222833"/>
+      <text class="chip" x="219" y="304" text-anchor="middle" fill="#9aa3b2">فا</text>
+    </g>
+  </g>
+</svg>

@@ -500,6 +500,15 @@ a { color: inherit; }
   color: var(--accent);
   text-decoration: none;
 }
+/* A card with two links keeps them on one row, sharing the bottom edge */
+.card__links {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+}
+.card__links .card__link { margin-top: 0; }
+
 .card__link .arrow { transition: transform var(--dur-fast) var(--ease); }
 .card__link:hover .arrow { transform: translateX(3px); }
 .card__link:hover { text-decoration: underline; text-underline-offset: 3px; }
