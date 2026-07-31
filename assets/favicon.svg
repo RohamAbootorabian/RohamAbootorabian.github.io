@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="RA">
+  <!-- Solid indigo tile: reads clearly against both light and dark browser
+       chrome, so no prefers-color-scheme variant is needed. -->
+  <rect width="512" height="512" rx="112" fill="#4f46e5"/>
+  <text x="256" y="258"
+        text-anchor="middle" dominant-baseline="central"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="232" font-weight="700" letter-spacing="-8"
+        fill="#ffffff">RA</text>
+</svg>
