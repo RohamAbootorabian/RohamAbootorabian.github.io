@@ -15,6 +15,21 @@ function applyLanguage(lang) {
   const dict = TRANSLATIONS[lang];
   if (!dict) return;
 
+  // A stale cached i18n.js would leave English text sitting inside an RTL
+  // layout. Surface that in the console instead of failing silently.
+  const missing = [];
+  document.querySelectorAll('[data-i18n], [data-i18n-html], [data-i18n-aria], [data-i18n-alt], [data-i18n-content]')
+    .forEach((el) => {
+      ['i18n', 'i18nHtml', 'i18nAria', 'i18nAlt', 'i18nContent'].forEach((prop) => {
+        const key = el.dataset[prop];
+        if (key && dict[key] == null) missing.push(key);
+      });
+    });
+  if (missing.length) {
+    console.warn(`[i18n] ${missing.length} untranslated key(s) for "${lang}" — ` +
+                 `you may be running a cached i18n.js:`, [...new Set(missing)]);
+  }
+
   root.setAttribute('lang', lang);
   root.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
 
