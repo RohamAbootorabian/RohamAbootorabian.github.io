@@ -407,9 +407,27 @@
           I'm looking for a software engineering internship and I'm happy to talk about
           any of the projects above. Email is the best way to reach me.
         </p>
-        <a class="btn btn--primary btn--lg reveal" href="mailto:abootorabianamir@gmail.com" dir="ltr">
-          abootorabianamir@gmail.com
-        </a>
+        <div class="contact__actions reveal">
+          <a class="btn btn--primary btn--lg" href="mailto:abootorabianamir@gmail.com" dir="ltr">
+            abootorabianamir@gmail.com
+          </a>
+
+          <!-- download attribute forces a save rather than opening in the
+               browser's PDF viewer, and renames the file sensibly -->
+          <a class="btn btn--ghost btn--lg btn--icon"
+             href="assets/Roham-Abootorabian-Resume.pdf"
+             download="Roham-Abootorabian-Resume.pdf"
+             data-i18n-aria="contact.resumeAria"
+             aria-label="Download my résumé as a PDF, 946 kilobytes">
+            <svg class="btn__icon" viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"
+                 fill="none" stroke="currentColor" stroke-width="2.1"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/>
+            </svg>
+            <span data-i18n="contact.resume">Download résumé</span>
+            <span class="btn__meta" data-i18n="contact.resumeMeta">PDF · 946 KB</span>
+          </a>
+        </div>
         <p class="contact__location reveal" data-i18n="contact.location">Based in Tehran, Iran</p>
         <ul class="socials reveal">
           <li><a href="https://github.com/RohamAbootorabian" target="_blank" rel="noopener"

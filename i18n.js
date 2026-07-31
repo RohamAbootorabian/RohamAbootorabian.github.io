@@ -108,6 +108,9 @@ const TRANSLATIONS = {
 
     'contact.title': 'Get in touch',
     'contact.lead': 'I\'m looking for a software engineering internship and I\'m happy to talk about any of the projects above. Email is the best way to reach me.',
+    'contact.resume': 'Download résumé',
+    'contact.resumeMeta': 'PDF · 946 KB',
+    'contact.resumeAria': 'Download my résumé as a PDF, 946 kilobytes',
     'contact.location': 'Based in Tehran, Iran',
     'social.gh': 'GitHub profile (opens in a new tab)',
     'social.li': 'LinkedIn profile (opens in a new tab)',
@@ -215,6 +218,9 @@ const TRANSLATIONS = {
 
     'contact.title': 'تماس با من',
     'contact.lead': 'دنبال یک فرصت کارآموزی در مهندسی نرم‌افزار هستم و با کمال میل درباره‌ی هر کدام از پروژه‌های بالا صحبت می‌کنم. بهترین راه ارتباط، ایمیل است.',
+    'contact.resume': 'دانلود رزومه',
+    'contact.resumeMeta': 'PDF · 946 KB',
+    'contact.resumeAria': 'دانلود رزومه با فرمت PDF، ۹۴۶ کیلوبایت',
     'contact.location': 'ساکن تهران، ایران',
     'social.gh': 'پروفایل GitHub (در تب جدید باز می‌شود)',
     'social.li': 'پروفایل LinkedIn (در تب جدید باز می‌شود)',
