@@ -523,17 +523,9 @@ a { color: inherit; }
   gap: var(--space-3);
 }
 
-/* Button with a leading icon and a trailing size hint */
+/* Button with a leading icon */
 .btn--icon { gap: var(--space-2); }
 .btn__icon { flex-shrink: 0; }
-.btn__meta {
-  font-size: .8rem;
-  font-weight: 500;
-  opacity: .68;
-  white-space: nowrap;
-}
-/* The size hint is Latin regardless of page language */
-[dir="rtl"] .btn__meta { direction: ltr; unicode-bidi: isolate; }
 .contact__location {
   margin: var(--space-4) 0 0;
   font-size: .9rem;
