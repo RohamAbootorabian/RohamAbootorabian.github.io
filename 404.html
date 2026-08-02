@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found — Roham Abootorabian</title>
+  <meta name="description" content="That page doesn't exist. Head back to the homepage.">
+  <!-- A 404 should never be indexed, whatever path led here -->
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
+
+  <!-- Same pre-paint theme and language setup as the homepage, so arriving
+       at a broken link doesn't flash a white page at a dark-theme visitor. -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      var saved = localStorage.getItem('theme');
+      var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      d.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+
+      var lang = localStorage.getItem('lang');
+      if (!lang) lang = (navigator.language || '').toLowerCase().startsWith('fa') ? 'fa' : 'en';
+      d.setAttribute('lang', lang);
+      d.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/fonts.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=4">
+  <style>
+    .notfound {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: var(--space-6);
+    }
+    .notfound__code {
+      font-size: clamp(4rem, 18vw, 9rem);
+      line-height: 1;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: var(--space-4);
+    }
+    .notfound__title { margin-bottom: var(--space-3); }
+    .notfound__lead {
+      color: var(--text-muted);
+      max-width: 46ch;
+      margin: 0 auto var(--space-6);
+    }
+  </style>
+</head>
+<body>
+  <main class="notfound">
+    <div>
+      <p class="notfound__code" aria-hidden="true">404</p>
+      <h1 class="notfound__title" data-t="title">Page not found</h1>
+      <p class="notfound__lead" data-t="lead">
+        That link doesn't lead anywhere — the page may have been moved or the
+        address mistyped.
+      </p>
+      <a class="btn btn--primary btn--lg" href="/" data-t="home">Back to the homepage</a>
+    </div>
+  </main>
+
+  <script>
+    // Three strings only, so they live here rather than pulling in i18n.js
+    (function () {
+      if (document.documentElement.getAttribute('lang') !== 'fa') return;
+      var fa = {
+        title: 'صفحه پیدا نشد',
+        lead: 'این نشانی به جایی نمی‌رسد — ممکن است صفحه جابه‌جا شده باشد یا آدرس اشتباه تایپ شده باشد.',
+        home: 'بازگشت به صفحه‌ی اصلی'
+      };
+      document.title = 'صفحه پیدا نشد — روهام ابوترابیان';
+      document.querySelectorAll('[data-t]').forEach(function (el) {
+        var v = fa[el.dataset.t];
+        if (v) el.textContent = v;
+      });
+    })();
+  </script>
+</body>
+</html>
