@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533" role="img" aria-labelledby="t d">
+  <title id="t">Flask Library API</title>
+  <desc id="d">A REST API for a library built with Flask. Features: 12 REST endpoints, JSON persistence, an OpenAPI spec, and a browser UI.</desc>
+
+  <style>
+    .bg    { fill: #eef1f5; }
+    .h1    { font: 700 44px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #14554b; letter-spacing: .5px; }
+    .lead  { font: 400 21px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .item  { font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #2b3440; }
+    .hd    { font: 700 15px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .verb  { font: 700 12px "SFMono-Regular", Menlo, Consolas, monospace; fill: #ffffff; }
+    .path  { font: 400 13px "SFMono-Regular", Menlo, Consolas, monospace; fill: #2b3440; }
+    .teal  { fill: #1c8a78; }
+    .deep  { fill: #14554b; }
+  </style>
+
+  <rect class="bg" width="800" height="533"/>
+
+  <!-- Title -->
+  <text class="h1" x="56" y="78">FLASK</text>
+  <text class="h1" x="56" y="126">LIBRARY API</text>
+
+  <!-- Server / endpoint icon -->
+  <g transform="translate(56,158)">
+    <rect x="0" y="8"  width="58" height="20" rx="5" class="deep"/>
+    <circle cx="12" cy="18" r="4" fill="#7fd8c6"/>
+    <rect x="0" y="34" width="58" height="20" rx="5" class="teal"/>
+    <circle cx="12" cy="44" r="4" fill="#d6f0e9"/>
+    <rect x="0" y="60" width="58" height="20" rx="5" class="deep"/>
+    <circle cx="12" cy="70" r="4" fill="#7fd8c6"/>
+  </g>
+
+  <!-- Lead copy -->
+  <text class="lead" x="140" y="182">A REST API for a library,</text>
+  <text class="lead" x="140" y="210">built with Flask</text>
+
+  <!-- Feature list -->
+  <g>
+    <circle cx="66" cy="292" r="6" class="teal"/><text class="item" x="90" y="300">12 REST endpoints</text>
+    <circle cx="66" cy="340" r="6" class="teal"/><text class="item" x="90" y="348">Books, users &amp; reservations</text>
+    <circle cx="66" cy="388" r="6" class="teal"/><text class="item" x="90" y="396">JSON persistence layer</text>
+    <circle cx="66" cy="436" r="6" class="teal"/><text class="item" x="90" y="444">OpenAPI spec &amp; tests</text>
+  </g>
+
+  <!-- API client mockup -->
+  <g transform="translate(452,112)">
+    <rect x="0" y="0" width="296" height="320" rx="16" fill="#ffffff" stroke="#1c8a78" stroke-width="7"/>
+
+    <!-- header bar -->
+    <path d="M0 16 a16 16 0 0 1 16 -16 h264 a16 16 0 0 1 16 16 v34 h-296 z" class="deep"/>
+    <text class="hd" x="24" y="33">/api/v1</text>
+
+    <!-- endpoint rows: method pill + path -->
+    <g>
+      <rect x="24" y="76" width="52" height="20" rx="5" fill="#1c8a78"/>
+      <text class="verb" x="34" y="90">GET</text>
+      <text class="path" x="88" y="91">/books</text>
+
+      <rect x="24" y="116" width="52" height="20" rx="5" fill="#2f6fb8"/>
+      <text class="verb" x="31" y="130">POST</text>
+      <text class="path" x="88" y="131">/books</text>
+
+      <rect x="24" y="156" width="52" height="20" rx="5" fill="#2f6fb8"/>
+      <text class="verb" x="31" y="170">POST</text>
+      <text class="path" x="88" y="171">/books/1/reserve</text>
+
+      <rect x="24" y="196" width="52" height="20" rx="5" fill="#e8a33a"/>
+      <text class="verb" x="35" y="210">PUT</text>
+      <text class="path" x="88" y="211">/users/1</text>
+
+      <rect x="24" y="236" width="52" height="20" rx="5" fill="#c0554a"/>
+      <text class="verb" x="27" y="250">DEL</text>
+      <text class="path" x="88" y="251">/users/1</text>
+    </g>
+
+    <!-- response status -->
+    <rect x="24" y="278" width="118" height="28" rx="6" fill="#d6f0e9"/>
+    <circle cx="42" cy="292" r="6" fill="#1c8a78"/>
+    <text class="path" x="56" y="297">200 OK</text>
+  </g>
+</svg>

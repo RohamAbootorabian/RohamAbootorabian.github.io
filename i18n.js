@@ -33,7 +33,7 @@ const TRANSLATIONS = {
     'hero.cta2': 'Get in touch',
 
     'about.title': 'About',
-    'about.p1': 'I\'m a Computer Science student in Tehran, focused on Python and object-oriented programming. Most of what I\'ve built so far came out of university coursework and personal curiosity: a real-time messenger using sockets and threading, a Unix-like virtual file system, an ATM simulator with a bilingual interface, and a library management system written in C.',
+    'about.p1': 'I\'m a Computer Science student in Tehran, focused on Python and object-oriented programming. Most of what I\'ve built so far came out of university coursework and personal curiosity: a real-time messenger using sockets and threading, a REST API built with Flask, a Unix-like virtual file system, an ATM simulator with a bilingual interface, and a library management system written in C.',
     'about.p2': 'I\'m comfortable across the stack a small project needs — designing the database layer, wiring up the logic, and building the interface people actually touch. I\'m currently looking for an internship where I can work on real systems alongside people who\'ve built them before.',
     'about.eduTitle': 'Education',
     'about.degree': 'BSc, Computer Science',
@@ -78,7 +78,13 @@ const TRANSLATIONS = {
     'p5.ariaLive': 'Open the live portfolio site (opens in a new tab)',
     'p5.alt': 'Personal Portfolio Website: a bilingual portfolio built with plain HTML, CSS and JavaScript. Features listed are English and Persian with RTL, light and dark themes, WCAG AA accessibility, and no frameworks, shown beside a browser split between a light left-to-right view and a dark right-to-left view.',
 
+    'p6.meta': 'Course project · Amirkabir University · 2025',
+    'p6.desc': 'A REST API for a library — books, users and reservations — built with Flask across <strong>12 endpoints</strong>, with server-assigned ids, request validation and meaningful status codes on every path. I wrote the persistence layer over JSON, every endpoint body, and the single-page browser UI with live search. Documented with an <strong>OpenAPI spec</strong> and covered by pytest.',
+    'p6.aria': 'View Flask Library API on GitHub (opens in a new tab)',
+    'p6.alt': 'Flask Library API: a REST API for a library built with Flask. Features listed are 12 REST endpoints, books, users and reservations, a JSON persistence layer, and an OpenAPI spec with tests, shown beside an API client listing GET, POST, PUT and DELETE endpoints with a 200 OK response.',
+
     'tag.sockets': 'Sockets',
+    'tag.rest': 'REST API',
     'tag.threading': 'Threading',
     'tag.tree': 'Tree structures',
     'tag.gui': 'GUI design',
@@ -142,7 +148,7 @@ const TRANSLATIONS = {
     'hero.cta2': 'تماس با من',
 
     'about.title': 'درباره‌ی من',
-    'about.p1': 'دانشجوی علوم کامپیوتر در تهران هستم و تمرکزم روی Python و برنامه‌نویسی شیءگراست. بیشتر چیزهایی که تا امروز ساخته‌ام از دل پروژه‌های درسی و کنجکاوی شخصی بیرون آمده‌اند: یک پیام‌رسان بلادرنگ با سوکت و Threading، یک سیستم فایل مجازی شبیه به یونیکس، یک شبیه‌ساز خودپرداز با رابط دوزبانه، و یک سیستم مدیریت کتابخانه به زبان C.',
+    'about.p1': 'دانشجوی علوم کامپیوتر در تهران هستم و تمرکزم روی Python و برنامه‌نویسی شیءگراست. بیشتر چیزهایی که تا امروز ساخته‌ام از دل پروژه‌های درسی و کنجکاوی شخصی بیرون آمده‌اند: یک پیام‌رسان بلادرنگ با سوکت و Threading، یک REST API با Flask، یک سیستم فایل مجازی شبیه به یونیکس، یک شبیه‌ساز خودپرداز با رابط دوزبانه، و یک سیستم مدیریت کتابخانه به زبان C.',
     'about.p2': 'با همه‌ی لایه‌هایی که یک پروژه‌ی کوچک لازم دارد راحتم — طراحی لایه‌ی پایگاه‌داده، پیاده‌سازی منطق برنامه، و ساخت رابطی که کاربر واقعاً با آن کار می‌کند. در حال حاضر دنبال یک فرصت کارآموزی هستم تا روی سیستم‌های واقعی و در کنار افرادی که پیش‌تر آن‌ها را ساخته‌اند کار کنم.',
     'about.eduTitle': 'تحصیلات',
     'about.degree': 'کارشناسی علوم کامپیوتر',
@@ -187,7 +193,13 @@ const TRANSLATIONS = {
     'p5.ariaLive': 'باز کردن نسخه‌ی زنده‌ی سایت (در تب جدید باز می‌شود)',
     'p5.alt': 'وب‌سایت شخصی: یک نمونه‌کار دوزبانه ساخته‌شده با HTML، CSS و JavaScript خالص. قابلیت‌های فهرست‌شده: فارسی و انگلیسی با چیدمان راست‌چین، تم روشن و تاریک، دسترس‌پذیری WCAG AA و بدون فریم‌ورک، در کنار مرورگری که نیمه‌ی روشن چپ‌چین و نیمه‌ی تاریک راست‌چین را نشان می‌دهد.',
 
+    'p6.meta': 'پروژه‌ی درسی · دانشگاه صنعتی امیرکبیر · ۱۴۰۴',
+    'p6.desc': 'یک REST API برای مدیریت کتابخانه — کتاب‌ها، کاربران و رزروها — ساخته‌شده با Flask در قالب <strong>۱۲ اندپوینت</strong>، همراه با تخصیص شناسه از سمت سرور، اعتبارسنجی درخواست‌ها و کدهای وضعیت درست در همه‌ی مسیرها. لایه‌ی ذخیره‌سازی روی JSON، بدنه‌ی همه‌ی اندپوینت‌ها و رابط کاربری تک‌صفحه‌ای با جست‌وجوی زنده را خودم نوشتم. مستندسازی با <strong>OpenAPI</strong> و پوشش تست با pytest.',
+    'p6.aria': 'مشاهده‌ی Flask Library API در GitHub (در تب جدید باز می‌شود)',
+    'p6.alt': 'Flask Library API: یک REST API برای کتابخانه ساخته‌شده با Flask. قابلیت‌های فهرست‌شده: ۱۲ اندپوینت REST، کتاب‌ها و کاربران و رزروها، لایه‌ی ذخیره‌سازی JSON و مستندات OpenAPI به همراه تست، در کنار نمایی از یک کلاینت API که اندپوینت‌های GET، POST، PUT و DELETE و پاسخ ۲۰۰ OK را نشان می‌دهد.',
+
     'tag.sockets': 'سوکت',
+    'tag.rest': 'REST API',
     'tag.threading': 'Threading',
     'tag.tree': 'ساختار درختی',
     'tag.gui': 'طراحی رابط گرافیکی',

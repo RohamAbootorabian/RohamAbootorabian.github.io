@@ -62,8 +62,8 @@
 
   <!-- ?v= is bumped on every deploy so browsers fetch the new file instead
        of serving a stale cached copy -->
-  <link rel="stylesheet" href="fonts.css?v=3">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="fonts.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -84,7 +84,10 @@
       <div class="nav__controls">
         <button class="lang-toggle" id="langToggle" type="button"
                 data-i18n-aria="lang.switch" aria-label="Switch to Persian">
-          <span class="lang-toggle__label" data-i18n="lang.label">فارسی</span>
+          <!-- The page ships in English, so this fallback must match
+               TRANSLATIONS.en['lang.label'] — the English boot path skips
+               applyLanguage() and leaves whatever is written here. -->
+          <span class="lang-toggle__label" data-i18n="lang.label">Fa</span>
         </button>
         <button class="theme-toggle" id="themeToggle" type="button"
                 data-i18n-aria="theme.toDark" aria-label="Switch to dark theme" aria-pressed="false">
@@ -125,8 +128,9 @@
               I'm a Computer Science student in Tehran, focused on Python and
               object-oriented programming. Most of what I've built so far came out of
               university coursework and personal curiosity: a real-time messenger using
-              sockets and threading, a Unix-like virtual file system, an ATM simulator
-              with a bilingual interface, and a library management system written in C.
+              sockets and threading, a REST API built with Flask, a Unix-like virtual
+              file system, an ATM simulator with a bilingual interface, and a library
+              management system written in C.
             </p>
             <p data-i18n="about.p2">
               I'm comfortable across the stack a small project needs — designing the
@@ -187,7 +191,7 @@
             <h3 class="skill-group__title" data-i18n="skills.frameworks">Frameworks &amp; libraries</h3>
             <ul class="tags">
               <li class="tag">Django</li>
-              <li class="tag">Flask</li>
+              <li class="tag tag--strong">Flask</li>
               <li class="tag">PyQt5 / PyQt6</li>
               <li class="tag">pandas</li>
               <li class="tag">NumPy</li>
@@ -220,6 +224,7 @@
               <li class="tag">Git</li>
               <li class="tag">GitHub</li>
               <li class="tag" data-i18n="skill.oop">OOP</li>
+              <li class="tag" data-i18n="tag.rest">REST API</li>
               <li class="tag" data-i18n="skill.socket">Socket programming</li>
               <li class="tag" data-i18n="skill.thread">Threading</li>
               <li class="tag" data-i18n="skill.ai">AI / Machine learning</li>
@@ -273,6 +278,40 @@
                   <span class="arrow" aria-hidden="true">→</span>
                 </a>
               </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__thumb card__thumb--img">
+              <img src="assets/flask-library-api.svg" width="800" height="533"
+                   loading="lazy" decoding="async" data-i18n-alt="p6.alt"
+                   alt="Flask Library API: a REST API for a library built with Flask. Features listed are 12 REST endpoints, books, users and reservations, a JSON persistence layer, and an OpenAPI spec with tests, shown beside an API client listing GET, POST, PUT and DELETE endpoints with a 200 OK response.">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Flask Library API</h3>
+              <p class="card__meta" data-i18n="p6.meta">Course project · Amirkabir University · 2025</p>
+              <p class="card__desc" data-i18n-html="p6.desc">
+                A REST API for a library — books, users and reservations — built with
+                Flask across <strong>12 endpoints</strong>, with server-assigned ids,
+                request validation and meaningful status codes on every path. I wrote
+                the persistence layer over JSON, every endpoint body, and the
+                single-page browser UI with live search. Documented with an
+                <strong>OpenAPI spec</strong> and covered by pytest.
+              </p>
+              <ul class="tags tags--sm">
+                <li class="tag">Python</li>
+                <li class="tag tag--strong">Flask</li>
+                <li class="tag" data-i18n="tag.rest">REST API</li>
+                <li class="tag">JSON</li>
+                <li class="tag">OpenAPI</li>
+                <li class="tag">pytest</li>
+              </ul>
+              <a class="card__link" href="https://github.com/RohamAbootorabian/flask-library-api"
+                 target="_blank" rel="noopener" data-i18n-aria="p6.aria"
+                 aria-label="View Flask Library API on GitHub (opens in a new tab)">
+                <span data-i18n="work.view">View on GitHub</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
             </div>
           </article>
 
@@ -451,7 +490,7 @@
     </div>
   </footer>
 
-  <script src="i18n.js?v=3"></script>
-  <script src="script.js?v=3"></script>
+  <script src="i18n.js?v=4"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
